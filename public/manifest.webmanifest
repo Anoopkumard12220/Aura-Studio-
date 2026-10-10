@@ -1,0 +1,115 @@
+{
+  "name": "Aura Studio",
+  "short_name": "Aura Studio",
+  "description": "A cinematic macOS-inspired web IDE with multi-language editing, local execution, and offline-first architecture",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "landscape-primary",
+  "theme_color": "#0a0b0e",
+  "background_color": "#0a0b0e",
+  "icons": [
+    {
+      "src": "/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["developer", "productivity", "utilities"],
+  "shortcuts": [
+    {
+      "name": "New Project",
+      "short_name": "New",
+      "description": "Create a new project",
+      "url": "/?action=new-project",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Open Project",
+      "short_name": "Open",
+      "description": "Open an existing project",
+      "url": "/?action=open-project",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "application/zip": [".zip"],
+        "text/plain": [".txt", ".js", ".ts", ".py", ".cpp", ".c", ".h", ".json", ".md", ".html", ".css"],
+        "application/json": [".json"],
+        "application/x-typescript": [".ts", ".tsx"],
+        "application/javascript": [".js", ".jsx"],
+        "text/x-python": [".py"],
+        "text/x-c++src": [".cpp", ".cc", ".cxx"],
+        "text/x-csrc": [".c", ".h"]
+      }
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "aura-studio",
+      "url": "/?project=%s"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "handle_links": "preferred",
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}

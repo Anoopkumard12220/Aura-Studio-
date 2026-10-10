@@ -1,0 +1,103 @@
+.glass {
+  background: rgba(17, 18, 23, 0.72);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-strong {
+  background: rgba(17, 18, 23, 0.85);
+  backdrop-filter: blur(30px) saturate(200%);
+  -webkit-backdrop-filter: blur(30px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-hover:hover {
+  background: rgba(22, 24, 32, 0.8);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.border-subtle {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.border-hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.text-primary {
+  color: #f0f6fc;
+}
+
+.text-secondary {
+  color: #8b949e;
+}
+
+.text-muted {
+  color: #545d68;
+}
+
+.bg-canvas {
+  background-color: #0a0b0e;
+}
+
+.bg-frame {
+  background-color: #111217;
+}
+
+.bg-surface {
+  background-color: #161820;
+}
+
+.bg-raised {
+  background-color: #1c1e29;
+}
+
+.accent-indigo {
+  color: #6366f1;
+}
+
+.accent-cyan {
+  color: #06b6d4;
+}
+
+.bg-accent-indigo {
+  background-color: #6366f1;
+}
+
+.bg-accent-cyan {
+  background-color: #06b6d4;
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 116, 139, 0.4) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.4);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 116, 139, 0.7);
+}
+
+.scrollbar-thin::-webkit-scrollbar-corner {
+  background: transparent;
+}
